@@ -14,17 +14,15 @@
     <link rel="manifest" href="/site.webmanifest" />
 	
     <style>/* Fix background behavior across all devices */
-	body{
-	    position: fixed; /* Keeps the background fixed */
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    background-image: url('Background.JPG'); /* Replace with your image */
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    z-index: -1; /* Ensures the background is behind content */
+	body {
+	    background-image: url('Background.JPG'); /* Replace with your image URL */
+	    background-size: cover;    /* Make the image cover the entire page */
+	    background-attachment: fixed; /* Default for larger screens (desktop) */
+	    background-position: center;  /* Center the background image */
+	    background-repeat: no-repeat; /* Prevent background from repeating */
+	    margin: 0;
+	    padding: 0;
+	    height: 100vh;
 	}
 	
 
