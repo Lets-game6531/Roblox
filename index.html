@@ -14,17 +14,26 @@
     <link rel="manifest" href="/site.webmanifest" />
 	
     <style>
-	body {
-	    background-color: #b2e0b2; /* Light green background color */
-	    background-image: url('Background.JPG'); /* Background image */
-	    background-attachment: fixed; /* Keeps the background fixed when scrolling */
-	    background-repeat: no-repeat; /* Prevents repeating the background image */
-	    background-size: cover; /* Ensures the image covers the entire screen */
-	    background-position: center; /* Centers the background image */
-	    color: #333; /* Text color */
-	    font-family: Arial, sans-serif; /* Optional: Sets a default font for the page */
-	}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        .fixed-background {
+            background-image: url('your-image.jpg'); /* Replace with your image URL */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            height: 100vh; /* Full viewport height */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Ensure content stays above the background */
+            padding: 20px;
+            color: white;
+        }
         header {
             background-color: #333;
             color: white;
